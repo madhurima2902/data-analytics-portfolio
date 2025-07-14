@@ -1,11 +1,11 @@
-**Supply-Chain Deliveries Forecasting — Prototype**
+#**Supply-Chain Deliveries Forecasting — Prototype**
 
-**Project overview**
+##**Project overview**
 
 This mini-project demonstrates how a small logistics provider can reduce stock-outs and overtime costs by producing an actionable, weekly forecast of order volume and pallet requirements.
 The analysis is built entirely with Microsoft Excel (Power Query + pivots) and Power BI; no proprietary code or internal data is required.
 
-**Business problem**
+##**Business problem**
 
 Objective
 
@@ -13,7 +13,7 @@ Forecast weekly order count and pallet volume for the top ten customers, achieve
 
 A distribution-centre manager asked for a proof of concept before sharing confidential order files. The open dataset below mirrors their data structure, allowing a transferrable, non-disclosive prototype.
 
-**Data source**
+##**Data source**
 
 Dataset : Time-Series Supply-Chain Dataset – Philip Hyde
 
@@ -21,7 +21,7 @@ Kaggle URL : https://www.kaggle.com/datasets/philiphyde1/time-series-supply-chai
 
 The single CSV loads directly into Excel Power Query and is small enough to refresh instantly in desktop Power BI.
 
-**Methodology**
+##**Methodology**
 
 _1. Data preparation (Excel – Power Query)_
 
