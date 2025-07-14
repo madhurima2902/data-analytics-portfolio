@@ -1,5 +1,7 @@
-**Supply-Chain Deliveries Forecasting — Prototype
-Project overview**
+**Supply-Chain Deliveries Forecasting — Prototype**
+
+**Project overview**
+
 This mini-project demonstrates how a small logistics provider can reduce stock-outs and overtime costs by producing an actionable, weekly forecast of order volume and pallet requirements.
 The analysis is built entirely with Microsoft Excel (Power Query + pivots) and Power BI; no proprietary code or internal data is required.
 
