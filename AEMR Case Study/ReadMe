@@ -1,5 +1,5 @@
-# American Energy Market Regulator (AEMR) SQL Case Study
-Project Overview
+#American Energy Market Regulator (AEMR) SQL Case Study
+##Project Overview
 
 This project analyzes network reliability and energy loss patterns for the American Energy Market Regulator (AEMR), which oversees the U.S. domestic energy network. The study examines outage data (planned and unplanned) from multiple providers during 2016–2017, with the goal of identifying reliability risks and performance drivers through SQL analysis and Tableau storytelling.
 
