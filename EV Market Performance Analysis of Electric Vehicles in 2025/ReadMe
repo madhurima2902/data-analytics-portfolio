@@ -1,1 +1,109 @@
+# EV Market Performance Analysis – 2025 Outlook
+
+### Author: [Madhurima Ghosh](https://www.linkedin.com/in/ghoshmadhurima/)
+📊 [View Tableau Dashboard](https://public.tableau.com/shared/3CM7BHBCG?:display_count=n&:origin=viz_share_link)
+
+---
+
+## Project Overview
+This project explores **Electric Vehicle (EV) performance trends for 2025 models**, using data-driven analysis to uncover how **range, efficiency, and charging speed** vary across manufacturers and segments.  
+The analysis identifies key trade-offs, high-value models, and strategic insights for **manufacturers, policymakers, and investors**.
+
+---
+
+## Problem Statement
+Despite rapid EV adoption, performance metrics such as *range, efficiency, and charging speed* vary significantly across models and brands.  
+This project aims to answer:
+
+> **Which EVs and manufacturers deliver the best balance between driving range, energy efficiency, and charging convenience?**
+
+---
+
+## Analytical Approach
+
+| Step | Description |
+|------|--------------|
+| **1. Define** | Identify performance drivers (range, efficiency, charging speed) impacting adoption. |
+| **2. Clean & Prepare Data** | Handle missing values, standardize units, and filter 2025 models. |
+| **3. KPI Development** | Create a composite **Value Index** using weighted metrics: 40% Range, 35% Efficiency, 25% Charging Speed. |
+| **4. Visualization** | Build five interactive Tableau dashboards to explore EV performance trends. |
+| **5. Insights & Recommendations** | Translate data findings into actionable insights for stakeholders. |
+
+---
+
+## Key Insights
+
+1. **Market Benchmarks:**  
+   - Median EV Range ≈ **400 km**  
+   - Median Efficiency ≈ **155 Wh/km**  
+   - Average Charging Speed ≈ **125 kW**
+
+2. **Trade-offs:**  
+   - Longer range → Slightly lower efficiency.  
+   - Premium models like **Mercedes CLA 250+**, **Lucid Air**, and **Porsche Taycan** balance both.
+
+3. **Performance Drivers:**  
+   - Range strongly correlates with battery capacity.  
+   - **Charging speed** is emerging as the key differentiator.
+
+4. **Segment Trends:**  
+   - **SUVs** lead range but lose efficiency.  
+   - **Hatchbacks** excel in efficiency but have shorter range.  
+   - **Sedans/Liftbacks** offer a balanced mix.
+
+5. **Manufacturer Leadership:**  
+   - **Porsche, Mercedes, Audi, and Lucid** lead in value and charging innovation.  
+   - **Mass-market OEMs** are improving efficiency but lag in charging readiness.
+
+---
+
+## Data Source
+Dataset: [Electric Vehicle Specifications (2025) – Kaggle](https://www.kaggle.com/datasets/urvishahir/electric-vehicle-specifications-dataset-2025/data)  
+- 470+ EV models  
+- 70+ manufacturers  
+- Metrics: range, efficiency, battery capacity, charging speed, body type  
+
+---
+
+## Tools & Technologies
+- **Tableau** → Interactive dashboards and story design  
+- **Google Colab / Python (optional)** → Data cleaning & exploration  
+- **GitHub** → Project documentation and version control
+
+---
+
+## Tableau Story Structure
+| Dashboard | Description |
+|------------|-------------|
+| **1. Market Overview** | Benchmark 2025 EV performance (range, efficiency, charging). |
+| **2. Range vs Efficiency** | Identify high-value models and trade-offs. |
+| **3. Performance Drivers** | Correlation between battery capacity and range; charging speed analysis. |
+| **4. Segment-Level Trade-offs** | Compare SUVs, Sedans, and Hatchbacks. |
+| **5. Manufacturer Portfolio** | Brand competitiveness by range, efficiency, and charging. |
+| **6. Summary & Recommendations** | Key takeaways and strategic insights. |
+
+---
+
+## Recommendations
+
+| Stakeholder | Action |
+|--------------|---------|
+| **Manufacturers** | Invest in ultra-fast charging R&D and SUV efficiency improvement. |
+| **Policymakers** | Incentivize balanced EV segments (Sedans, Liftbacks). |
+| **Investors** | Focus on brands leading in charging and efficiency innovation. |
+
+---
+
+## References
+- Dataset: [Kaggle EV Specifications 2025](https://www.kaggle.com/datasets/urvishahir/electric-vehicle-specifications-dataset-2025/data)  
+- Tableau Story: [View Interactive Dashboard](https://public.tableau.com/shared/3CM7BHBCG?:display_count=n&:origin=viz_share_link)
+
+---
+
+## 📧 Contact
+**Madhurima Ghosh**  
+[LinkedIn](https://www.linkedin.com/in/ghoshmadhurima/) | [Email](mailto:ghoshmadhurima29@gmail.com)
+
+---
+
 
