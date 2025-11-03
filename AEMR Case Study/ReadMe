@@ -1,63 +1,111 @@
-American Energy Market Regulator (AEMR) SQL Case Study
-Project Overview
+# American Energy Market Regulator (AEMR) SQL Case Study
 
-This project analyzes network reliability and energy loss patterns for the American Energy Market Regulator (AEMR), which oversees the U.S. domestic energy network. The study examines outage data (planned and unplanned) from multiple providers during 2016–2017, aiming to identify reliability risks and performance drivers through SQL analysis and Tableau storytelling.
+## Project Overview
+This project analyzes network reliability and energy loss patterns for the **American Energy Market Regulator (AEMR)**, which oversees the U.S. domestic energy network. The study examines outage data (planned and unplanned) from multiple providers during **2016–2017**, aiming to identify reliability risks and performance drivers through SQL analysis and Tableau storytelling.
 
 The case addresses two key management priorities:
+1. **Energy Stability & Market Outages** – Frequency and causes of outages  
+2. **Energy Losses & Market Reliability** – Impact of outages on total energy loss and system resilience  
 
-Energy Stability & Market Outages – Frequency and causes of outages
+---
 
-Energy Losses & Market Reliability – Impact of outages on total energy loss and system resilience
+## Objectives
+- Determine which **outage types** are most frequent and disruptive  
+- Identify **market participants** responsible for the highest energy losses  
+- Analyze **year-over-year trends** to highlight reliability changes  
+- Provide **data-driven recommendations** for improving network stability  
 
-Objectives
+---
 
-Determine which outage types are most frequent and disruptive
+## Dataset Description
+The dataset covers outages submitted by multiple U.S. energy providers and includes:  
+- **Outage Type:** Consequential, Forced, Opportunistic, Planned  
+- **Outage Status:** Approved or Canceled  
+- **Outage Duration:** Start and end timestamps  
+- **Energy Lost (MW):** Quantitative measure of impact  
+- **Market Participant Information:** Provider name and ID  
 
-Identify market participants responsible for the highest energy losses
+---
 
-Analyze year-over-year trends to highlight reliability changes
+## Tools & Technologies
+- **SQL:** Data extraction, cleaning, and aggregation (via Jupyter Notebook using `%%sql` magic)  
+- **Python (Jupyter):** Query execution and validation  
+- **Tableau:** Visualization and executive storytelling  
+- **PowerPoint / Google Slides:** Final management presentation  
 
-Provide data-driven recommendations for improving network stability
+---
 
-Dataset Description
+## Analysis Process
 
-The dataset covers outages submitted by multiple U.S. energy providers and includes:
+### Step 1 – SQL Analysis
+All SQL analysis and queries were executed using **Google Colab**.  
+You can view the full notebook here:  
+[AEMR SQL Analysis (Colab Notebook)](https://colab.research.google.com/drive/16BqiSejB0deellkG7d0NDrgC_vgXqE8Z?authuser=0#scrollTo=VzMT3EaofPfw)
 
-Outage Type: Consequential, Forced, Opportunistic, Planned
+Key tasks included:  
+- Completing 10 core SQL queries across **Part I and Part II**  
+- Exploring monthly outage trends, energy loss breakdowns, and participant-level insights  
 
-Outage Status: Approved or Canceled
+### Step 2 – Data Storytelling
+All data visualizations and dashboards were built in **Tableau Public**.  
+View the live dashboard here:  
+[AEMR Tableau Dashboard & Presentation](https://public.tableau.com/views/AEMRCaseStudyPresentation_17611774446280/AEMRPresentation?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-Outage Duration: Start and end timestamps
+The Tableau dashboard visualizes outage trends by year, provider, and outage type, emphasizing the dominance of forced outages in 2017.  
 
-Energy Lost (MW): Quantitative measure of impact
+### Step 3 – Executive Presentation
+Developed a concise executive-style presentation structured around three management themes:
+- **Energy Stability (Frequency)** – Most frequent outage contributors  
+- **Energy Loss (Magnitude)** – Providers with the greatest energy loss  
+- **Duration (Downtime)** – Providers with the longest outages  
 
-Market Participant Information: Provider name and ID
+---
 
-Tools & Technologies
+## Key Insights
+- **Forced outages** accounted for **over 70%** of all events, rising **28%** between 2016 and 2017  
+- **Energy loss** increased **17%**, driven mainly by **Auricon, GW, and MELK**  
+- These three providers were responsible for **~60% of total forced-outage energy loss (~152,000 MW)**  
+- **December 2017** marked the peak in outage frequency, reflecting deferred maintenance and operational strain  
 
-SQL: Data extraction, cleaning, and aggregation (via Jupyter Notebook using %%sql magic)
+---
 
-Python (Jupyter): Query execution and validation
+## Recommendations
+1. **Implement Predictive Maintenance** – Use data models and real-time sensors to prevent failures  
+2. **Increase Preventive Maintenance** – Encourage scheduled outages to reduce unplanned events  
+3. **Audit High-Risk Providers (Auricon, GW, MELK)** – Conduct reliability reviews and enforce improvement plans  
+4. **Strengthen Regulatory Oversight** – Introduce benchmarks and penalties for recurring forced outages  
+5. **Adopt Real-Time Reliability Monitoring** – Develop dashboards to track outage trends and forecast risks  
 
-Tableau: Visualization and executive storytelling
+---
 
-PowerPoint / Google Slides: Final management presentation
+## Repository Structure
+```
+AEMR_SQL_Case_Study/
+│
+├── data/
+│   ├── outage_data_2016.csv
+│   ├── outage_data_2017.csv
+│
+├── notebooks/
+│   ├── AEMR_SQL_Analysis.ipynb
+│
+├── visuals/
+│   ├── Tableau_Dashboard.png
+│   ├── AEMR_Presentation_Slides.pdf
+│
+├── docs/
+│   ├── 12.4.3_AEMR_Case_Overview.docx
+│   ├── 12.4.4_AEMR_SQL_Instructions.docx
+│   ├── 12.4.5_AEMR_Presentation_Guide.docx
+│
+└── README.md
+```
 
-Analysis Process
-Step 1 – SQL Analysis
+---
 
-All SQL analysis and queries were executed using Google Colab.
-You can view the full notebook here:
-AEMR SQL Analysis (Colab Notebook)
-
-Key tasks included:
-
-Completing 10 core SQL queries across Part I and Part II
-
-Exploring monthly outage trends, energy loss breakdowns, and participant-level insights
-
-Step 2 – Data Storytelling
-
-All data visualizations and dashboards were built in Tableau Public.
-View the live dashboard here:
-AEMR Tableau Dashboard & Presentation
+## Author
+**Madhurima Ghosh**  
+Plano, TX, USA  
+Data & Process Analytics | SQL | Tableau | Lean Six Sigma  
+**Email:** ghoshmadhurima29@gmail.com  
+**LinkedIn:** [https://www.linkedin.com/in/ghoshmadhurima/](https://www.linkedin.com/in/ghoshmadhurima/)
