@@ -1,1 +1,34 @@
 
+American Energy Market Regulator Case Study — SQL
+Overview
+Scenario Overview
+The American Energy Market Regulator (AEMR) is responsible for looking after the United States of America’s domestic energy network. The regulator’s responsibility is to ensure that America’s energy network remains reliable with minimal disruptions, which are known as outages. 
+There are four key types of outages:
+● Consequential – This outage is caused by an exogenous event or a consequence of work unrelated to the energy provider (i.e. A transmission line may be down, which means that a particular power provider may be unable to send energy to the network)
+● Forced – This outage is caused by a situation that has forced the power generating asset to be unavailable. In other words, it has caught the AEMR by surprise and was not planned. (i.e. A cooling tower that supplies water to cool down a power-generating asset has broken down, which has now forced the power-generating asset offline as the temperature can no longer be regulated
+properly.)
+● Opportunistic – This outage arises when an energy provider wishes to be proactive with the maintenance of their assets and believes that it can complete maintenance on its plant within a 48-hour window. If it takes longer than this, the outage is considered a PLANNED outage as it was planned in advance and will take longer than 48 hours.
+● Planned – This outage arises when an energy provider reports to the AEMR that an energy-generating asset needs to be taken offline for routine or planned maintenance activities to ensure the reliability of the asset in the future.
+
+Of the four outage types, the only one the AEMR penalizes is a forced outage, as this means that, if enough energy providers enter the forced outage state and the demand for energy is greater than the amount of energy that can be supplied, stress will be put on the energy system. This will then threaten the reliability of the network which is what
+the AEMR wishes to avoid.
+Recently, the AEMR management team has been increasingly aware of a large number of energy providers that submitted outages over the 2016 and 2017 calendar years. The management team has expressed a desire to have the following two areas of concern addressed:
+A) Energy Stability and Market Outages
+B) Energy Losses and Market Reliability
+
+PART I
+Q1. Write a SQL Statement to COUNT the number of valid (i.e. Status = Approved) Outage Events sorted by their respective Outage_Reason (i.e. Forced, Consequential, Scheduled, Opportunistic) over the 2016 & 2017 Periods.
+Q2 i) Write a SQL Statement showing the Total of all Outage Types (Forced, Consequential, Scheduled, Opportunistic) where the Status = Approved, that occurred for both 2016 and 2017, grouped by Year and Month. per month (i.e. 1 – 12). Order by Year, Month, Total_Number_Outages in Descending Order.
+Q2 ii) Building on the query you write in i), group the results by Outage Type, Year and Month. This is so you can identify whether there is any outage type specifically increasing on a monthly basis when comparing 2016 to 2017.
+Q3) Write a SQL statement that calculates 1) The Total_Number_Outage_Events and 2) The Average Duration in DAYS for each Participant Code and Outage Type over the 2016 and 2017 Period where the Status = Approved. Order by Total_Number_Outage_Events in Descending Order, Reason and Year.
+Q4) Using the below criteria for context, write a SQL Statement that classifies each participant code as either High Risk, Medium Risk or Low Risk in a column called Risk_Classification that is based off their Average Outage Duration Time. Please note that this is for all valid (i.e. Where status = approved) outage types (Forced, Consequential, Scheduled, Opportunistic) for all participant codes from 2016 to 2017. Order the results using Average Duration Time In Days in descending order. High Risk - On average, the participant is unavailable for > 24 Hours (1 Day) Medium Risk - On average, the participant is unavailable between 12 and 24 Hours Low Risk - On average, the participant is unavailable for less than 12 Hours
+Q5) Using the criteria given below for context, write a SQL Statement that classifies each participant code as either High Risk, Medium Risk or Low Risk in a column called Risk_Classification using the new classification criteria. Order the results using Average Duration Time In Days in descending order. High Risk - On average, the participant is unavailable for > 24 Hours (1 Day) OR the Total Number of Outage Events > 20 Medium Risk - On average, the participant is unavailable between 12 and 24 Hours OR the Total Number of Outage Events is Between 10 and 20 Low Risk - On average, the participant is unavailable for less than 12 Hours OR the Total Number of Outage Events < 10 If Outage Type is not forced, then N/A
+
+Part II
+Q6) Write a SQL Statement to calculate the proportion of Forced Outages that have occurred over the 2016 - 2017 Period. Do we observe any particular increases regarding any Outage Types over this period?
+Q7) Q7) Write a SQL Statement to calculate the Total Number of Outages, Total Duration In Days and Total Energy Lost of all valid Outages for each participant code and facility_code, sorted by Total Energy Lost in descending order and Ordered by the YEAR Category.
+Q8) Write a SQL Statement to calculate the Average Duration In Days and Average Energy Lost of all valid FORCED OUTAGES for each participant code and facility_code sorted by Average Energy Lost in descending order and Ordered by the YEAR Category.
+Q9) Write a SQL Statement to calculate the Average Energy Lost and Total Energy Lost for each Facility Code and Participant Code across both the 2016 and 2017 periods when the Outage_Reason is set to Forced. Upon completion of this, calculate the percentage of energy lost due to forced outages for each Facility_Code. Please ORDER the query by Total Energy Lost from 2016 to 2017.
+Q10) Having identified the top 3 participants by Total Energy Loss being GW, MELK and Auricon; Write a SQL Statement calculating the Total_Energy_Lost each of these three Participant_Codes and the Facility_Code. Additionally, identify the Description_Of_Outage associated with the highest Total_Energy_Lost for each of the Participant_Codes and Facility_Code for each of the three participants.
+
+Lastly, calculate the percentage of Energy Loss, attributed to these reasons!
