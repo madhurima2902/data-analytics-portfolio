@@ -78,31 +78,6 @@ Developed a concise executive-style presentation structured around three managem
 
 ---
 
-## Repository Structure
-```
-AEMR_SQL_Case_Study/
-│
-├── data/
-│   ├── outage_data_2016.csv
-│   ├── outage_data_2017.csv
-│
-├── notebooks/
-│   ├── AEMR_SQL_Analysis.ipynb
-│
-├── visuals/
-│   ├── Tableau_Dashboard.png
-│   ├── AEMR_Presentation_Slides.pdf
-│
-├── docs/
-│   ├── 12.4.3_AEMR_Case_Overview.docx
-│   ├── 12.4.4_AEMR_SQL_Instructions.docx
-│   ├── 12.4.5_AEMR_Presentation_Guide.docx
-│
-└── README.md
-```
-
----
-
 ## Author
 **Madhurima Ghosh**  
 Plano, TX, USA  
