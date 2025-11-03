@@ -1,5 +1,42 @@
 I have used Google Colab to run the SQL queries
-Steps to upload the dataset:
+Steps to upload and use the dataset:
+Step 1:
+upload the AEMR.csv file to Google Colab
+Step 2:
+Run the following code
+import requests
+from IPython.core.magic import register_line_magic
+from IPython.display import HTML
+import sqlite3
+
+@register_line_magic
+def load_sqlite_db(url):
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        with open('temp_db_file.db', 'wb') as file:
+            file.write(response.content)
+        print('SQLite database file downloaded successfully.')
+    else:
+        print('Failed to download the SQLite database file.')
+
+sqlite_db_url = 'https://raw.githubusercontent.com/chrishuisb1990/practice_datasets/main/AEMR.db'
+
+%load_sqlite_db $sqlite_db_url
+
+%load_ext sql
+
+%sql sqlite:///temp_db_file.db
+
+%config SqlMagic.style = '_DEPRECATED_DEFAULT'
+
+
+Output ->
+SQLite database file downloaded successfully.
+
+
+Step 3: 
+Run queries for the questions
 
 Part I
 
