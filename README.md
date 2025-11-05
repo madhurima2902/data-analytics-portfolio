@@ -23,4 +23,4 @@ Built a profitability and portfolio optimization dashboard to identify underperf
 
 Explored hospital performance metrics using SQL and Tableau to uncover key drivers of patient satisfaction and operational efficiency.
 
-[SQL Notebook: View on Google Colab]() | [Tableau Visuals](https://public.tableau.com/views/AEMRCaseStudyPresentation_17611774446280/AEMRPresentation?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) | [Github](https://github.com/madhurima2902/data-analytics-portfolio/tree/main/AEMR%20Case%20Study)
+[SQL Notebook: View on Google Colab](https://colab.research.google.com/drive/16BqiSejB0deellkG7d0NDrgC_vgXqE8Z?authuser=0#scrollTo=VzMT3EaofPfw) | [Tableau Visuals](https://public.tableau.com/views/AEMRCaseStudyPresentation_17611774446280/AEMRPresentation?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) | [Github](https://github.com/madhurima2902/data-analytics-portfolio/tree/main/AEMR%20Case%20Study)
