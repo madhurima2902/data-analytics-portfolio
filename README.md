@@ -1,4 +1,5 @@
 # Data-Analytics-Portfolio
+### Author: [Madhurima Ghosh](https://www.linkedin.com/in/ghoshmadhurima/)
 Welcome to my Data Analytics Portfolio — a collection of real-world projects showcasing my skills in data storytelling, business problem-solving, and visualization. Each project demonstrates the complete analytics lifecycle — from data cleaning and exploration to insight generation and dashboard creation.
 
 Tools & Skills: Excel | Power BI | Tableau | SQL | Python (Basics) | Data Cleaning | Visualization | Business Problem Solving
